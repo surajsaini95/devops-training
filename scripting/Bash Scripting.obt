@@ -1,0 +1,23 @@
+Bash Scripting
+
+Bash is a command language interpreter. The name is an acronym for the ‘Bourne-Again SHell’.
+
+Shell is a macro processor which allows for an interactive or non-interactive command execution. 
+
+here are various other shell interpreters available, such as Korn shell, C shell and more
+
+
+If the current directory is in the PATH variable, you can avoid typing the ./ before the hello.sh. It is a good idea to create your own bin directory as follows:
+$ mkdir $HOME/bin
+
+Add $HOME/bin to the PATH variable using bash shell export command:
+$ export PATH=$PATH:$HOME/bin
+$ echo $PATH
+
+Move hello.sh in $HOME/bin using the mv command, run:
+$ mv hello.sh $HOME/bin
+
+Execute the script:
+$ hello.sh
+
+
