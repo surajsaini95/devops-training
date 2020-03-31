@@ -1,0 +1,29 @@
+
+    grep -n "Unix" data.txt
+    grep -i "Unix" data.txt
+    grep -c "Awk" data.txt
+    grep -o "Awk" data.txt
+    grep -v "Awk" data.txt
+    grep -e "Awk" -e "Linux" data.txt
+    
+    sed 's/Unix/hi/' data.txt
+    sed 's/unix/linux/2' data.txt
+    sed 's/Unix/hel/g' data.txt
+    sed '4 s/Unix/n/' data.txt
+    sed -n '/Unix/,/Awk/p' data.txt
+    sed '2,$d' data.txt
+    
+    awk '{print}' demo2file.txt
+    awk -F /// '{print $1, $3}' data.txt
+    awk -F "2" '{print$1}' data.txt
+    awk '{print$5}' demo2file.txt
+    awk '$1 == "1" { print $2 }' data.txt
+    awk '$2 == "Shivani" { print $4 }' data.txt
+    awk '$2 ~ /Sh/ { print $5 }' data.txt
+    awk '$4 !~ /Sh/ { print $8 }' data.txt
+
+
+
+
+
+
